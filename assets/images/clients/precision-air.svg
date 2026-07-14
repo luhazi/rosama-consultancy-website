@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <rect width="220" height="80" fill="#00205B" rx="6"/>
+  <path d="M 30 42 L 56 30 L 52 38 L 68 34 L 60 42 L 68 50 L 52 46 L 56 54 Z"
+        fill="#C8973A" opacity="0.9"/>
+  <text x="130" y="36" font-family="Arial,sans-serif" font-size="16" font-weight="700"
+        fill="#ffffff" text-anchor="middle" letter-spacing="1">PRECISION</text>
+  <text x="130" y="56" font-family="Arial,sans-serif" font-size="16" font-weight="700"
+        fill="#C8973A" text-anchor="middle" letter-spacing="3">AIR</text>
+</svg>

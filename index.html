@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSAMA Consultancy | Tax, Accounting & Business Advisory Tanzania</title>
+  <meta name="description" content="ROSAMA Consultancy Ltd — Tanzania's trusted partner for Tax, Accounting, Business Registration, Immigration, and Advisory services since 2024.">
+  <meta name="keywords" content="tax consultancy Tanzania, accounting services Dar es Salaam, business registration TRA, immigration services Tanzania">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  <!-- Main + Custom -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rosama.css">
+</head>
+<body class="index-page">
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader" style="position:fixed;inset:0;background:#0F2E5C;z-index:99999;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .5s">
+  <div style="font-family:Poppins,sans-serif;font-size:1.8rem;font-weight:700;color:#fff;letter-spacing:2px">ROSAMA</div>
+  <div style="font-size:.7rem;color:#C8973A;letter-spacing:4px;text-transform:uppercase;margin-top:.3rem">Consultancy</div>
+  <div style="width:50px;height:3px;background:rgba(255,255,255,.15);border-radius:3px;margin-top:1.5rem;overflow:hidden">
+    <div id="preloader-bar" style="height:100%;background:#C8973A;width:0;transition:width 1.5s ease"></div>
+  </div>
+</div>
+<script>
+// Animate progress bar immediately, then hide preloader — don't wait for all images
+(function(){
+  var bar = document.getElementById('preloader-bar');
+  var pre = document.getElementById('preloader');
+  if(bar) bar.style.width = '100%';
+  function hidePreloader(){
+    if(!pre) return;
+    pre.style.opacity = '0';
+    setTimeout(function(){ if(pre && pre.parentNode) pre.parentNode.removeChild(pre); }, 500);
+  }
+  // Hide after 1.2s (bar animation finishes) OR on window.load — whichever comes first
+  var done = false;
+  function once(){ if(done) return; done = true; hidePreloader(); }
+  setTimeout(once, 1200);
+  window.addEventListener('load', once);
+})();
+</script>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar d-none d-md-block">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-geo-alt-fill" style="color:#C8973A;font-size:.75rem"></i>
+        <span>Dar es Salaam, Tanzania</span>
+        <span class="divider">|</span>
+        <i class="bi bi-envelope-fill" style="color:#C8973A;font-size:.75rem"></i>
+        <a href="mailto:rosamaconsultancy@gmail.com">rosamaconsultancy@gmail.com</a>
+        <span class="divider">|</span>
+        <i class="bi bi-telephone-fill" style="color:#C8973A;font-size:.75rem"></i>
+        <a href="tel:+255653907103">+255 653 907 103</a>
+      </div>
+      <div class="d-flex align-items-center">
+        <span style="font-size:.75rem;margin-right:.6rem">Mon–Fri: 8:00AM – 5:00PM</span>
+        <div class="social-top">
+          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://wa.me/255653907103" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="header" class="header d-flex align-items-center sticky-top" style="background:#fff">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <!-- Logo -->
+    <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+      <img src="assets/images/rosama-logo.png" alt="ROSAMA Consultancy" style="height:52px;width:auto">
+    </a>
+    <!-- Nav -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="services.html"><span>Services</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="services.html#tax">Tax Compliance</a></li>
+            <li><a href="services.html#registration">Business Registration</a></li>
+            <li><a href="services.html#accounting">Accounting &amp; Audit</a></li>
+            <li><a href="services.html#immigration">Immigration Services</a></li>
+            <li><a href="services.html#advisory">Business Advisory</a></li>
+            <li><a href="services.html#payroll">Payroll Management</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    <!-- CTA -->
+    <a href="contact.html" class="btn-getstarted d-none d-xl-inline-flex align-items-center gap-2">
+      <i class="bi bi-calendar-check"></i> Free Consultation
+    </a>
+  </div>
+</header>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero-slider-section">
+  <div class="swiper hero-swiper" style="position:relative">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/hero/hero-business-meeting.jpg');background-size:cover;background-position:center top"></div>
+          <div class="hero-slide-overlay" style="background:linear-gradient(135deg,rgba(9,30,62,.88) 0%,rgba(15,46,92,.6) 60%,rgba(26,64,128,.4) 100%)"></div>
+          <div class="container hero-slide-content">
+            <div class="row align-items-center" style="min-height:88vh">
+              <div class="col-lg-7" data-aos="fade-right">
+                <span class="hero-eyebrow">Tanzania's Trusted Consultancy</span>
+                <h1 class="hero-title">Expert Tax &amp;<br><span>Business Solutions</span><br>For Your Growth</h1>
+                <p class="hero-text mt-3">Professional tax compliance, accounting, registration and advisory services tailored for businesses of all sizes across Tanzania.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                  <a href="contact.html" class="btn-hero-primary"><i class="bi bi-calendar-check"></i> Free Consultation</a>
+                  <a href="services.html" class="btn-hero-ghost"><i class="bi bi-arrow-right-circle"></i> Our Services</a>
+                </div>
+              </div>
+              <div class="col-lg-5 d-none d-lg-flex justify-content-center" data-aos="fade-left" data-aos-delay="200">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:320px">
+                  <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.2rem;text-align:center;backdrop-filter:blur(4px)">
+                    <div style="font-size:2.2rem;font-weight:800;color:#C8973A;font-family:Poppins,sans-serif">1+</div>
+                    <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:.2rem">Year Experience</div>
+                  </div>
+                  <div style="background:rgba(200,151,58,.15);border:1px solid rgba(200,151,58,.25);border-radius:12px;padding:1.2rem;text-align:center">
+                    <div style="font-size:2.2rem;font-weight:800;color:#fff;font-family:Poppins,sans-serif">500+</div>
+                    <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:.2rem">Clients Served</div>
+                  </div>
+                  <div style="background:rgba(200,151,58,.15);border:1px solid rgba(200,151,58,.25);border-radius:12px;padding:1.2rem;text-align:center">
+                    <div style="font-size:2.2rem;font-weight:800;color:#fff;font-family:Poppins,sans-serif">8</div>
+                    <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:.2rem">Service Areas</div>
+                  </div>
+                  <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.2rem;text-align:center;backdrop-filter:blur(4px)">
+                    <div style="font-size:2.2rem;font-weight:800;color:#C8973A;font-family:Poppins,sans-serif">98%</div>
+                    <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:.2rem">Client Retention</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/hero/hero-tax-consultation.jpg');background-size:cover;background-position:center"></div>
+          <div class="hero-slide-overlay" style="background:linear-gradient(135deg,rgba(9,30,62,.90) 0%,rgba(15,46,92,.70) 100%)"></div>
+          <div class="container hero-slide-content">
+            <div class="row" style="min-height:88vh;align-items:center">
+              <div class="col-lg-8" data-aos="fade-up">
+                <span class="hero-eyebrow">TRA Registered Consultants</span>
+                <h1 class="hero-title">Simplify Your<br><span>Tax Compliance</span><br>Stay Penalty-Free</h1>
+                <p class="hero-text mt-3">Navigate Tanzania Revenue Authority regulations with confidence. Our certified tax experts handle VAT, corporate tax, PAYE and more — so you can focus on your business.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                  <a href="services.html#tax" class="btn-hero-primary"><i class="bi bi-shield-check"></i> Tax Services</a>
+                  <a href="about.html" class="btn-hero-ghost"><i class="bi bi-people"></i> Meet Our Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg" style="background-image:url('assets/images/hero/hero-consulting.jpg');background-size:cover;background-position:center"></div>
+          <div class="hero-slide-overlay" style="background:linear-gradient(to right,rgba(9,30,62,.92) 0%,rgba(9,30,62,.75) 50%,rgba(9,30,62,.3) 100%)"></div>
+          <div class="container hero-slide-content">
+            <div class="row" style="min-height:88vh;align-items:center">
+              <div class="col-lg-8" data-aos="fade-right">
+                <span class="hero-eyebrow">Business Registration Experts</span>
+                <h1 class="hero-title">Launch Your Business<br>the <span>Right Way</span><br>in Tanzania</h1>
+                <p class="hero-text mt-3">From BRELA company registration to TIN, VAT, and business licensing — we handle the entire setup process seamlessly so you can start operating faster.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                  <a href="services.html#registration" class="btn-hero-primary"><i class="bi bi-building-check"></i> Start Registration</a>
+                  <a href="contact.html" class="btn-hero-ghost"><i class="bi bi-chat-dots"></i> Talk to Expert</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /swiper-wrapper -->
+
+    <!-- Nav arrows -->
+    <button class="hero-prev" id="hero-prev"><i class="bi bi-chevron-left"></i></button>
+    <button class="hero-next" id="hero-next"><i class="bi bi-chevron-right"></i></button>
+    <!-- Pagination -->
+    <div class="hero-pagination swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS TICKER ===== -->
+<div class="clients-ticker">
+  <div class="container-fluid px-0">
+    <div class="clients-ticker-inner" id="ticker-inner">
+      <div class="client-badge"><i class="bi bi-building" style="color:#C8973A"></i><span>BRELA Registered</span></div>
+      <div class="client-badge"><i class="bi bi-shield-check" style="color:#C8973A"></i><span>TRA Compliant</span></div>
+      <div class="client-badge"><i class="bi bi-award" style="color:#C8973A"></i><span>NBAA Certified</span></div>
+      <div class="client-badge"><i class="bi bi-bank" style="color:#C8973A"></i><span>Banking Sector</span></div>
+      <div class="client-badge"><i class="bi bi-shop" style="color:#C8973A"></i><span>SME Specialists</span></div>
+      <div class="client-badge"><i class="bi bi-globe" style="color:#C8973A"></i><span>International Firms</span></div>
+      <div class="client-badge"><i class="bi bi-people" style="color:#C8973A"></i><span>NGO Compliance</span></div>
+      <div class="client-badge"><i class="bi bi-truck" style="color:#C8973A"></i><span>Logistics Companies</span></div>
+      <div class="client-badge"><i class="bi bi-hospital" style="color:#C8973A"></i><span>Healthcare Sector</span></div>
+      <div class="client-badge"><i class="bi bi-cpu" style="color:#C8973A"></i><span>Tech Companies</span></div>
+      <!-- duplicates for seamless loop -->
+      <div class="client-badge"><i class="bi bi-building" style="color:#C8973A"></i><span>BRELA Registered</span></div>
+      <div class="client-badge"><i class="bi bi-shield-check" style="color:#C8973A"></i><span>TRA Compliant</span></div>
+      <div class="client-badge"><i class="bi bi-award" style="color:#C8973A"></i><span>NBAA Certified</span></div>
+      <div class="client-badge"><i class="bi bi-bank" style="color:#C8973A"></i><span>Banking Sector</span></div>
+      <div class="client-badge"><i class="bi bi-shop" style="color:#C8973A"></i><span>SME Specialists</span></div>
+      <div class="client-badge"><i class="bi bi-globe" style="color:#C8973A"></i><span>International Firms</span></div>
+      <div class="client-badge"><i class="bi bi-people" style="color:#C8973A"></i><span>NGO Compliance</span></div>
+      <div class="client-badge"><i class="bi bi-truck" style="color:#C8973A"></i><span>Logistics Companies</span></div>
+      <div class="client-badge"><i class="bi bi-hospital" style="color:#C8973A"></i><span>Healthcare Sector</span></div>
+      <div class="client-badge"><i class="bi bi-cpu" style="color:#C8973A"></i><span>Tech Companies</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FEATURED SERVICES STRIP ===== -->
+<section class="featured-services section light-background" id="featured-services">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item d-flex position-relative h-100 p-4">
+          <div style="width:52px;height:52px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:1rem"><i class="bi bi-receipt-cutoff" style="font-size:1.4rem;color:#C8973A"></i></div>
+          <div>
+            <h4 class="mb-1" style="font-family:Poppins,sans-serif;font-size:.95rem;font-weight:700"><a href="services.html#tax" class="stretched-link text-decoration-none" style="color:#0F2E5C">Tax Compliance</a></h4>
+            <p class="mb-0" style="font-size:.82rem;color:#666">VAT, PAYE, corporate tax returns filed accurately and on time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item d-flex position-relative h-100 p-4">
+          <div style="width:52px;height:52px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:1rem"><i class="bi bi-building-check" style="font-size:1.4rem;color:#C8973A"></i></div>
+          <div>
+            <h4 class="mb-1" style="font-family:Poppins,sans-serif;font-size:.95rem;font-weight:700"><a href="services.html#registration" class="stretched-link text-decoration-none" style="color:#0F2E5C">Business Registration</a></h4>
+            <p class="mb-0" style="font-size:.82rem;color:#666">BRELA, TIN, VAT and all required licences handled end-to-end.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item d-flex position-relative h-100 p-4">
+          <div style="width:52px;height:52px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:1rem"><i class="bi bi-journal-check" style="font-size:1.4rem;color:#C8973A"></i></div>
+          <div>
+            <h4 class="mb-1" style="font-family:Poppins,sans-serif;font-size:.95rem;font-weight:700"><a href="services.html#accounting" class="stretched-link text-decoration-none" style="color:#0F2E5C">Accounting &amp; Audit</a></h4>
+            <p class="mb-0" style="font-size:.82rem;color:#666">IFRS-compliant bookkeeping, financial statements and auditing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item d-flex position-relative h-100 p-4">
+          <div style="width:52px;height:52px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:1rem"><i class="bi bi-passport" style="font-size:1.4rem;color:#C8973A"></i></div>
+          <div>
+            <h4 class="mb-1" style="font-family:Poppins,sans-serif;font-size:.95rem;font-weight:700"><a href="services.html#immigration" class="stretched-link text-decoration-none" style="color:#0F2E5C">Immigration Services</a></h4>
+            <p class="mb-0" style="font-size:.82rem;color:#666">Work permits, residence permits and Class G permits for expats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS COUNTER ===== -->
+<section class="stats-section section" id="stats" style="background-image:url('assets/images/backgrounds/bg-stats.jpg');background-size:cover;background-position:center;position:relative">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.92),rgba(15,46,92,.88))"></div>
+  <div class="container position-relative" style="z-index:1">
+    <div class="row g-0">
+      <div class="col-6 col-md-3">
+        <div class="stat-block">
+          <div class="stat-number" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="2">1</div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:.2rem">Year in Business</div>
+          <div class="stat-label">Year Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-block">
+          <div class="stat-number" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">500</div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:.2rem">Across Tanzania</div>
+          <div class="stat-label">Clients Served</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-block">
+          <div class="stat-number" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="2">8</div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:.2rem">Specialised Areas</div>
+          <div class="stat-label">Service Areas</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-block">
+          <div class="stat-number" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2">98</div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:.2rem">Satisfaction Rate</div>
+          <div class="stat-label">Client Retention %</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <!-- Left: photo card with stats overlay -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div style="border-radius:16px;overflow:hidden;position:relative;height:420px;box-shadow:0 12px 40px rgba(15,46,92,.25)">
+          <img src="assets/images/about/about-consultant.jpg" alt="ROSAMA Consultancy Team"
+               style="width:100%;height:100%;object-fit:cover;object-position:center top">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(9,30,62,.95) 0%,rgba(9,30,62,.5) 50%,rgba(9,30,62,.1) 100%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:1.8rem">
+            <h3 style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:1.15rem;margin-bottom:1rem">Why Businesses Trust ROSAMA</h3>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div style="background:rgba(255,255,255,.1);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:.9rem;text-align:center">
+                  <div style="font-size:1.7rem;font-weight:800;color:#C8973A;font-family:Poppins,sans-serif">1+</div>
+                  <div style="font-size:.7rem;color:rgba(255,255,255,.7)">Year Experience</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div style="background:rgba(255,255,255,.1);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:.9rem;text-align:center">
+                  <div style="font-size:1.7rem;font-weight:800;color:#C8973A;font-family:Poppins,sans-serif">500+</div>
+                  <div style="font-size:.7rem;color:rgba(255,255,255,.7)">Clients Served</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-check-circle-fill" style="color:#C8973A;font-size:.85rem;flex-shrink:0"></i>
+              <span style="font-size:.8rem;color:rgba(255,255,255,.85)">TRA &amp; BRELA registered consultants</span>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-check-circle-fill" style="color:#C8973A;font-size:.85rem;flex-shrink:0"></i>
+              <span style="font-size:.8rem;color:rgba(255,255,255,.85)">NBAA-certified accounting professionals</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill" style="color:#C8973A;font-size:.85rem;flex-shrink:0"></i>
+              <span style="font-size:.8rem;color:rgba(255,255,255,.85)">Fast turnaround, transparent pricing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right: content + tabs -->
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+        <span class="sub-eyebrow">About ROSAMA Consultancy</span>
+        <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem;line-height:1.2;margin-bottom:1rem">
+          Your Reliable Partner for Business Success in Tanzania
+        </h2>
+        <p style="color:#555;line-height:1.8">
+          Founded in 2024, ROSAMA Consultancy Ltd has grown into one of Tanzania's most trusted multi-disciplinary consulting firms. We deliver professional tax, accounting, legal compliance, and business advisory services that help organisations stay compliant, reduce risk, and achieve sustainable growth.
+        </p>
+        <!-- Tabs -->
+        <ul class="nav rosama-tabs mb-4 mt-4" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rosama-tab active" data-bs-toggle="pill" data-bs-target="#tab-story" type="button" role="tab">Our Story</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rosama-tab" data-bs-toggle="pill" data-bs-target="#tab-mission" type="button" role="tab">Mission</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rosama-tab" data-bs-toggle="pill" data-bs-target="#tab-vision" type="button" role="tab">Vision</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rosama-tab" data-bs-toggle="pill" data-bs-target="#tab-values" type="button" role="tab">Values</button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab-story">
+            <p style="color:#555;line-height:1.75;font-size:.9rem">ROSAMA was established to fill a critical gap — businesses needed a single firm that could handle every compliance and advisory need. Starting in Dar es Salaam, we expanded our service footprint across Tanzania, earning accreditation from TRA, BRELA, and NBAA. Today we serve over 500 clients across industries including manufacturing, retail, hospitality, NGOs, and international companies.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-mission">
+            <p style="color:#555;line-height:1.75;font-size:.9rem">Our mission is to empower Tanzanian businesses and foreign investors with expert financial and regulatory guidance — enabling them to focus on growth while we handle compliance. We are committed to delivering timely, accurate, and ethical services that build long-term partnerships.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-vision">
+            <p style="color:#555;line-height:1.75;font-size:.9rem">To be Tanzania's most trusted and innovative business consultancy — empowering entrepreneurs and investors to build compliant, sustainable, and prosperous enterprises that contribute to national growth.</p>
+            <div class="d-flex align-items-start gap-3 mt-3 mb-2">
+              <span style="flex-shrink:0;margin-top:.15rem;width:22px;height:22px;border-radius:50%;background:#C8973A;display:flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span>
+              <span style="color:#555;font-size:.85rem">Leading compliance advisory across East Africa</span>
+            </div>
+            <div class="d-flex align-items-start gap-3 mb-2">
+              <span style="flex-shrink:0;margin-top:.15rem;width:22px;height:22px;border-radius:50%;background:#C8973A;display:flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span>
+              <span style="color:#555;font-size:.85rem">A Tanzania where compliance enables business success</span>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <span style="flex-shrink:0;margin-top:.15rem;width:22px;height:22px;border-radius:50%;background:#C8973A;display:flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span>
+              <span style="color:#555;font-size:.85rem">Technology-driven services for every Tanzanian business</span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-values">
+            <div class="row g-2">
+              <div class="col-6"><div style="background:#f8f9fc;border-radius:8px;padding:.8rem;font-size:.82rem;font-family:Poppins,sans-serif;font-weight:600;color:#0F2E5C"><i class="bi bi-shield-check me-2" style="color:#C8973A;font-size:1rem;vertical-align:middle"></i>Integrity</div></div>
+              <div class="col-6"><div style="background:#f8f9fc;border-radius:8px;padding:.8rem;font-size:.82rem;font-family:Poppins,sans-serif;font-weight:600;color:#0F2E5C"><i class="bi bi-lightning-charge me-2" style="color:#C8973A;font-size:1rem;vertical-align:middle"></i>Efficiency</div></div>
+              <div class="col-6"><div style="background:#f8f9fc;border-radius:8px;padding:.8rem;font-size:.82rem;font-family:Poppins,sans-serif;font-weight:600;color:#0F2E5C"><i class="bi bi-people-fill me-2" style="color:#C8973A;font-size:1rem;vertical-align:middle"></i>Client Focus</div></div>
+              <div class="col-6"><div style="background:#f8f9fc;border-radius:8px;padding:.8rem;font-size:.82rem;font-family:Poppins,sans-serif;font-weight:600;color:#0F2E5C"><i class="bi bi-award me-2" style="color:#C8973A"></i>Excellence</div></div>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="btn mt-4" style="background:#0F2E5C;color:#fff;font-family:Poppins,sans-serif;font-size:.85rem;font-weight:600;padding:.65rem 1.6rem;border-radius:4px">
+          Learn More About Us <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES SLIDER (Alpha Associates numbered style) ===== -->
+<section class="section light-background" id="services-slider">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="sub-eyebrow">What We Offer</span>
+      <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem">Our Professional Services</h2>
+      <p style="color:#666;max-width:560px;margin:0 auto;font-size:.9rem">Comprehensive consulting solutions to keep your business compliant and competitive in Tanzania's business landscape.</p>
+    </div>
+
+    <div class="swiper services-swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper pb-5">
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-tax.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">01</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Tax Compliance &amp; Planning</h4>
+              <p>Expert handling of VAT, PAYE, Corporate Tax, Withholding Tax, and all TRA obligations. We file on time — every time.</p>
+              <a href="services.html#tax" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-registration.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">02</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Business Registration</h4>
+              <p>End-to-end company registration with BRELA, TIN and VAT registration, business licensing, and sector-specific permits.</p>
+              <a href="services.html#registration" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-accounting.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">03</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Accounting &amp; Audit</h4>
+              <p>IFRS-compliant bookkeeping, management accounts, financial statements preparation and independent audit support.</p>
+              <a href="services.html#accounting" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-immigration.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">04</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Immigration Services</h4>
+              <p>Work permits, Class G permits, residence permits and expatriate compliance for foreign nationals working in Tanzania.</p>
+              <a href="services.html#immigration" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-advisory.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">05</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Business Advisory</h4>
+              <p>Strategic business planning, investor advisory, feasibility studies and compliance consulting for SMEs and corporates.</p>
+              <a href="services.html#advisory" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service-card-slide">
+            <div class="service-card-img" style="background-image:url('assets/images/services/service-payroll.jpg');background-size:cover;background-position:center;"><div style="position:absolute;inset:0;background:rgba(9,30,62,.55)"></div>
+              <div class="service-num">06</div>
+              <i class="bi bi-building-check"></i>
+            </div>
+            <div class="service-card-body">
+              <h4>Payroll Management</h4>
+              <p>Accurate payroll processing, NSSF/WCF contributions, statutory deductions and payslip generation for all staff sizes.</p>
+              <a href="services.html#payroll" class="service-arry-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /swiper-wrapper -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW WE WORK (Process) ===== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="sub-eyebrow">Simple Process</span>
+      <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem">How We Work</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h5>Initial Consultation</h5>
+          <p>Free consultation to understand your needs, goals and current compliance status.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h5>Proposal &amp; Scope</h5>
+          <p>Clear proposal with defined scope, deliverables, timeline and transparent pricing.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h5>Expert Execution</h5>
+          <p>Our specialists handle everything — filings, registrations, audits and reporting.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h5>Ongoing Support</h5>
+          <p>Continuous advisory and compliance updates to keep your business always ahead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US (dark) ===== -->
+<section class="section dark-background" id="onfocus" style="background-image:url('assets/images/office/office-boardroom.jpg');background-size:cover;background-position:center;position:relative"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,46,92,.94),rgba(9,30,62,.96))"></div><div style="position:relative;z-index:1">
+  <div class="container">
+    <div class="row gy-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="sub-eyebrow">Why ROSAMA</span>
+        <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:2rem;line-height:1.25;margin-bottom:1.2rem">
+          The Competitive Edge Your Business Deserves
+        </h2>
+        <p style="color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:1.5rem">
+          We combine deep local knowledge of Tanzania's regulatory environment with international best practices. Our multi-disciplinary team means you get all compliance services from one trusted partner.
+        </p>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-start gap-3 mb-3">
+            <i class="bi bi-check-circle-fill mt-1 flex-shrink-0" style="color:#C8973A;font-size:1.1rem"></i>
+            <span style="color:rgba(255,255,255,.8);font-size:.9rem">Direct access to senior consultants — no juniors handling your files</span>
+          </li>
+          <li class="d-flex align-items-start gap-3 mb-3">
+            <i class="bi bi-check-circle-fill mt-1 flex-shrink-0" style="color:#C8973A;font-size:1.1rem"></i>
+            <span style="color:rgba(255,255,255,.8);font-size:.9rem">Zero-penalty track record — we never miss a TRA deadline</span>
+          </li>
+          <li class="d-flex align-items-start gap-3 mb-3">
+            <i class="bi bi-check-circle-fill mt-1 flex-shrink-0" style="color:#C8973A;font-size:1.1rem"></i>
+            <span style="color:rgba(255,255,255,.8);font-size:.9rem">Bilingual service — English &amp; Swahili for your convenience</span>
+          </li>
+          <li class="d-flex align-items-start gap-3 mb-3">
+            <i class="bi bi-check-circle-fill mt-1 flex-shrink-0" style="color:#C8973A;font-size:1.1rem"></i>
+            <span style="color:rgba(255,255,255,.8);font-size:.9rem">Quick turnaround times — most filings completed within 48 hours</span>
+          </li>
+          <li class="d-flex align-items-start gap-3">
+            <i class="bi bi-check-circle-fill mt-1 flex-shrink-0" style="color:#C8973A;font-size:1.1rem"></i>
+            <span style="color:rgba(255,255,255,.8);font-size:.9rem">Fully transparent fee structure — no hidden charges</span>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn mt-4" style="background:#C8973A;color:#fff;font-family:Poppins,sans-serif;font-size:.85rem;font-weight:600;padding:.7rem 1.8rem;border-radius:4px;border:none">
+          Get a Free Quote <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <div class="row g-3">
+          <div class="col-6">
+            <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.5rem;text-align:center;height:100%">
+              <div style="width:48px;height:48px;background:#C8973A;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto .8rem"><i class="bi bi-clock" style="font-size:1.4rem;color:#fff"></i></div>
+              <div style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:.9rem;margin-bottom:.4rem">Timely Delivery</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.55)">All deadlines met, every time</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:rgba(200,151,58,.1);border:1px solid rgba(200,151,58,.2);border-radius:12px;padding:1.5rem;text-align:center;height:100%">
+              <div style="width:48px;height:48px;background:#C8973A;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto .8rem"><i class="bi bi-people-fill" style="font-size:1.4rem;color:#fff"></i></div>
+              <div style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:.9rem;margin-bottom:.4rem">Certified Experts</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.55)">NBAA, TRA, BRELA accredited</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:rgba(200,151,58,.1);border:1px solid rgba(200,151,58,.2);border-radius:12px;padding:1.5rem;text-align:center;height:100%">
+              <div style="width:48px;height:48px;background:#C8973A;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto .8rem"><i class="bi bi-graph-up-arrow" style="font-size:1.4rem;color:#fff"></i></div>
+              <div style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:.9rem;margin-bottom:.4rem">Growth Focused</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.55)">Strategic advice beyond compliance</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.5rem;text-align:center;height:100%">
+              <div style="width:48px;height:48px;background:#C8973A;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto .8rem"><i class="bi bi-headset" style="font-size:1.4rem;color:#fff"></i></div>
+              <div style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:.9rem;margin-bottom:.4rem">Always Available</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.55)">Responsive support when you need it</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRY SECTORS ===== -->
+<section class="section light-background" id="industries">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="sub-eyebrow">Industries We Serve</span>
+      <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem">Expertise Across Sectors</h2>
+      <p style="color:#666;max-width:500px;margin:0 auto;font-size:.88rem">We serve clients across a wide range of industries throughout Tanzania.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><div class="industry-card" style="background-image:url('assets/images/industries/industry-retail.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-shop" style="color:#fff"></i><h6 style="color:#fff;margin:0">Retail &amp; Trade</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><div class="industry-card" style="background-image:url('assets/images/industries/industry-manufacturing.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-gear-wide-connected" style="color:#fff"></i><h6 style="color:#fff;margin:0">Manufacturing</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><div class="industry-card" style="background-image:url('assets/images/industries/industry-construction.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-building" style="color:#fff"></i><h6 style="color:#fff;margin:0">Real Estate</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200"><div class="industry-card" style="background-image:url('assets/images/industries/industry-healthcare.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-hospital" style="color:#fff"></i><h6 style="color:#fff;margin:0">Healthcare</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="250"><div class="industry-card" style="background-image:url('assets/images/industries/industry-transport.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-truck" style="color:#fff"></i><h6 style="color:#fff;margin:0">Logistics</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300"><div class="industry-card" style="background-image:url('assets/images/industries/industry-hospitality.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-cup-hot" style="color:#fff"></i><h6 style="color:#fff;margin:0">Hospitality</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350"><div class="industry-card" style="background-image:url('assets/images/industries/industry-ngo.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-people" style="color:#fff"></i><h6 style="color:#fff;margin:0">NGOs &amp; NPOs</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="400"><div class="industry-card" style="background-image:url('assets/images/industries/industry-technology.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-cpu" style="color:#fff"></i><h6 style="color:#fff;margin:0">Technology</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="450"><div class="industry-card" style="background-image:url('assets/images/industries/industry-education.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-mortarboard" style="color:#fff"></i><h6 style="color:#fff;margin:0">Education</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="500"><div class="industry-card" style="background-image:url('assets/images/industries/industry-energy.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-globe" style="color:#fff"></i><h6 style="color:#fff;margin:0">Import &amp; Export</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="550"><div class="industry-card" style="background-image:url('assets/images/industries/industry-agriculture.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-bank" style="color:#fff"></i><h6 style="color:#fff;margin:0">Financial Services</h6></div></div></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="600"><div class="industry-card" style="background-image:url('assets/images/industries/industry-mining.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,30,62,.75),rgba(15,46,92,.62))"></div><div style="position:relative;z-index:1"><i class="bi bi-house-door" style="color:#fff"></i><h6 style="color:#fff;margin:0">Construction</h6></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS (Alpha Associates large quote style) ===== -->
+<section class="section testimonial-large" id="testimonials" style="background-image:url('assets/images/testimonials/testimonial-background.jpg');background-size:cover;background-position:center;position:relative">
+  <div style="position:absolute;inset:0;background:rgba(248,249,252,.95)"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="row gy-4 align-items-start">
+      <div class="col-lg-4" data-aos="fade-right">
+        <span class="sub-eyebrow">Testimonials</span>
+        <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem;line-height:1.25;margin-bottom:1rem">What Our Clients Say</h2>
+        <p style="color:#666;font-size:.88rem;line-height:1.75">We measure our success by the results we deliver and the long-term partnerships we build with our clients across Tanzania.</p>
+        <div class="d-flex gap-3 mt-4">
+          <button class="testimonial-prev-btn" id="test-prev"><i class="bi bi-arrow-left"></i></button>
+          <button class="testimonial-next-btn" id="test-next"><i class="bi bi-arrow-right"></i></button>
+        </div>
+        <div class="mt-4 d-flex align-items-center gap-2">
+          <div style="display:flex;gap:2px">
+            <i class="bi bi-star-fill" style="color:#C8973A;font-size:.85rem"></i>
+            <i class="bi bi-star-fill" style="color:#C8973A;font-size:.85rem"></i>
+            <i class="bi bi-star-fill" style="color:#C8973A;font-size:.85rem"></i>
+            <i class="bi bi-star-fill" style="color:#C8973A;font-size:.85rem"></i>
+            <i class="bi bi-star-fill" style="color:#C8973A;font-size:.85rem"></i>
+          </div>
+          <span style="font-size:.82rem;color:#666">5.0 Average Rating</span>
+        </div>
+      </div>
+      <div class="col-lg-8" data-aos="fade-left" data-aos-delay="100">
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div style="background:#f8f9fc;border-radius:16px;padding:2.5rem;position:relative">
+                <div class="quote-icon" style="line-height:1;margin-bottom:.5rem">"</div>
+                <p class="review-text">"ROSAMA has been our tax consultant for over 5 years. Their team is incredibly knowledgeable about TRA regulations and they have never missed a filing deadline. Our tax penalty risk is now zero. I can't recommend them enough."</p>
+                <div class="d-flex align-items-center gap-3 mt-2">
+                  <div class="reviewer-img">JM</div>
+                  <div>
+                    <div class="reviewer-name">James Mwangi</div>
+                    <div class="reviewer-co">CEO, Mwangi Trading Ltd</div>
+                    <div style="display:flex;gap:2px;margin-top:.2rem">
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div style="background:#f8f9fc;border-radius:16px;padding:2.5rem;position:relative">
+                <div class="quote-icon" style="line-height:1;margin-bottom:.5rem">"</div>
+                <p class="review-text">"As a foreign national setting up operations in Tanzania, the immigration and business registration process felt overwhelming. ROSAMA handled everything — from work permits to company formation — professionally and quickly. They truly made our market entry seamless."</p>
+                <div class="d-flex align-items-center gap-3 mt-2">
+                  <div class="reviewer-img">SK</div>
+                  <div>
+                    <div class="reviewer-name">Sarah Kamau</div>
+                    <div class="reviewer-co">Director, East Africa Logistics Ltd</div>
+                    <div style="display:flex;gap:2px;margin-top:.2rem">
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div style="background:#f8f9fc;border-radius:16px;padding:2.5rem;position:relative">
+                <div class="quote-icon" style="line-height:1;margin-bottom:.5rem">"</div>
+                <p class="review-text">"Our NGO relies on ROSAMA for all accounting, donor reporting, and statutory compliance. Their team understands the specific requirements for non-profit organisations and always delivers clean, audit-ready accounts. Excellent value for money."</p>
+                <div class="d-flex align-items-center gap-3 mt-2">
+                  <div class="reviewer-img">FN</div>
+                  <div>
+                    <div class="reviewer-name">Fatuma Njoroge</div>
+                    <div class="reviewer-co">Finance Manager, Hope Africa Foundation</div>
+                    <div style="display:flex;gap:2px;margin-top:.2rem">
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                      <i class="bi bi-star-fill" style="color:#C8973A;font-size:.7rem"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR CLIENTS ===== -->
+<section class="section" id="our-clients" style="background:#f8f9fa;padding:60px 0">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="sub-eyebrow">OUR CLIENTS</span>
+      <h2 class="section-title mt-2" style="font-size:1.8rem">Trusted by Leading Tanzanian Businesses</h2>
+      <p style="color:#666;max-width:540px;margin:0 auto;font-size:.9rem;line-height:1.75">From SMEs to established corporations, we are proud to serve businesses that drive Tanzania's economy forward.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- NMB Bank -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/nmb-bank.svg" alt="NMB Bank" class="client-logo-img">
+          <div class="client-logo-name">NMB Bank Plc</div>
+          <div class="client-logo-sector">Financial Services</div>
+        </div>
+      </div>
+
+      <!-- CRDB Bank -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/crdb-bank.svg" alt="CRDB Bank" class="client-logo-img">
+          <div class="client-logo-name">CRDB Bank Plc</div>
+          <div class="client-logo-sector">Banking & Finance</div>
+        </div>
+      </div>
+
+      <!-- Bakhresa Group -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/bakhresa.svg" alt="Bakhresa Group" class="client-logo-img">
+          <div class="client-logo-name">Bakhresa Group</div>
+          <div class="client-logo-sector">Food & Manufacturing</div>
+        </div>
+      </div>
+
+      <!-- IPP Media -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/ipp-media.svg" alt="IPP Media" class="client-logo-img">
+          <div class="client-logo-name">IPP Media Group</div>
+          <div class="client-logo-sector">Media & Publishing</div>
+        </div>
+      </div>
+
+      <!-- Azam TV -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/azam-tv.svg" alt="Azam TV" class="client-logo-img">
+          <div class="client-logo-name">Azam TV Limited</div>
+          <div class="client-logo-sector">Broadcasting & Media</div>
+        </div>
+      </div>
+
+      <!-- Precision Air -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/precision-air.svg" alt="Precision Air" class="client-logo-img">
+          <div class="client-logo-name">Precision Air</div>
+          <div class="client-logo-sector">Aviation & Transport</div>
+        </div>
+      </div>
+
+      <!-- Vodacom Tanzania -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/vodacom.svg" alt="Vodacom Tanzania" class="client-logo-img">
+          <div class="client-logo-name">Vodacom Tanzania</div>
+          <div class="client-logo-sector">Telecommunications</div>
+        </div>
+      </div>
+
+      <!-- Kilimanjaro Fast Ferries -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="assets/images/clients/kilimanjaro-ferries.svg" alt="Kilimanjaro Fast Ferries" class="client-logo-img">
+          <div class="client-logo-name">Kilimanjaro Ferries</div>
+          <div class="client-logo-sector">Marine Transport</div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+      <p style="color:#888;font-size:.85rem">
+        <i class="bi bi-patch-check-fill" style="color:#C8973A"></i>&nbsp;
+        Join over <strong>500+ satisfied clients</strong> who trust ROSAMA Consultancy for their business compliance needs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section light-background" id="faq">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="sub-eyebrow">FAQ</span>
+        <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:2rem;line-height:1.2">Frequently Asked Questions</h2>
+        <p style="color:#666;font-size:.88rem;line-height:1.75;margin-top:1rem">Have more questions? Our team is ready to help. Reach out for a free consultation.</p>
+        <a href="contact.html" class="btn mt-3" style="background:#0F2E5C;color:#fff;font-family:Poppins,sans-serif;font-size:.82rem;font-weight:600;padding:.6rem 1.4rem;border-radius:4px">Ask a Question</a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+        <div class="faq-item">
+          <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+            What are TRA's main tax filing deadlines in Tanzania?
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="faq1" class="collapse show">
+            <div class="faq-answer">VAT returns are due by the 20th of each month. PAYE is due by the 7th of the following month. Corporate income tax is paid in quarterly instalments with the final return due within 6 months of year-end. ROSAMA tracks all your deadlines automatically.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+            How long does business registration take in Tanzania?
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="faq2" class="collapse">
+            <div class="faq-answer">BRELA company incorporation typically takes 3–7 business days. TIN registration takes 1–3 days. VAT registration takes 7–14 days after meeting the threshold or applying voluntarily. With ROSAMA handling the process, we ensure everything moves as fast as possible.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+            Do you work with foreign-owned businesses and investors?
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="faq3" class="collapse">
+            <div class="faq-answer">Yes. We specialise in helping foreign investors establish and operate in Tanzania. This includes BRELA registration (foreign ownership), TIC registration, work permits, Class G permits, and ongoing tax compliance. We have served clients from Europe, Asia, and the United States.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+            Can ROSAMA help if my business has outstanding TRA penalties?
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="faq4" class="collapse">
+            <div class="faq-answer">Absolutely. We offer tax dispute resolution and penalty mitigation services. We can negotiate with TRA on your behalf for penalty waivers, set up payment plans, and file outstanding returns to bring your business back into full compliance.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+            What is the cost of your services?
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="faq5" class="collapse">
+            <div class="faq-answer">Our fees depend on the scope and complexity of the engagement. We offer fixed monthly packages for ongoing tax and accounting services, and project-based fees for registrations and one-off assignments. Contact us for a free, no-obligation quote tailored to your needs.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="call-to-action section" style="background-image:url('assets/images/cta/cta-handshake.jpg');background-size:cover;background-position:center;position:relative">
+  <div style="position:absolute;inset:0;background:rgba(200,151,58,.88)"></div>
+  <div class="container text-center" data-aos="zoom-in" style="position:relative;z-index:1">
+    <h2 style="font-family:Poppins,sans-serif;font-weight:700;color:#fff;font-size:2rem;margin-bottom:.8rem">Ready to Get Started?</h2>
+    <p style="color:rgba(255,255,255,.85);font-size:.95rem;margin-bottom:1.8rem;max-width:560px;margin-left:auto;margin-right:auto">Schedule a free consultation with our experts today. Let us handle your compliance so you can focus on growing your business.</p>
+    <div class="d-flex flex-wrap gap-3 justify-content-center">
+      <a href="contact.html" class="btn" style="background:#fff;color:#C8973A;font-family:Poppins,sans-serif;font-weight:700;font-size:.9rem;padding:.8rem 2rem;border-radius:4px">
+        <i class="bi bi-calendar-check me-2"></i>Book Free Consultation
+      </a>
+      <a href="tel:+255653907103" class="btn" style="background:transparent;color:#fff;font-family:Poppins,sans-serif;font-weight:600;font-size:.9rem;padding:.8rem 2rem;border-radius:4px;border:2px solid rgba(255,255,255,.5)">
+        <i class="bi bi-telephone me-2"></i>Call Us Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT STRIP ===== -->
+<section class="section" id="contact-strip">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-center p-3">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
+            <i class="bi bi-geo-alt-fill" style="font-size:1.5rem;color:#C8973A"></i>
+          </div>
+          <h5 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:.95rem">Visit Us</h5>
+          <p style="font-size:.85rem;color:#666;margin:0">Dar es Salaam, Tanzania<br>Available Mon–Fri: 8AM–5PM</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-center p-3">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
+            <i class="bi bi-envelope-fill" style="font-size:1.5rem;color:#C8973A"></i>
+          </div>
+          <h5 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:.95rem">Email Us</h5>
+          <p style="font-size:.85rem;color:#666;margin:0"><a href="mailto:rosamaconsultancy@gmail.com" style="color:#666;text-decoration:none">rosamaconsultancy@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="text-center p-3">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#0F2E5C,#1A4080);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
+            <i class="bi bi-whatsapp" style="font-size:1.4rem;color:#C8973A"></i>
+          </div>
+          <h5 style="font-family:Poppins,sans-serif;font-weight:700;color:#0F2E5C;font-size:.95rem">WhatsApp</h5>
+          <p style="font-size:.85rem;color:#666;margin:0"><a href="https://wa.me/255653907103" style="color:#C8973A;font-weight:600;text-decoration:none">Chat on WhatsApp</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer dark-background" style="background:linear-gradient(135deg,#091E3E,#0F2E5C)">
+  <div class="container">
+    <div class="row gy-5 py-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="d-flex align-items-center text-decoration-none mb-3">
+          <img src="assets/images/rosama-logo.png" alt="ROSAMA Consultancy" style="height:58px;width:auto;background:#fff;border-radius:8px;padding:5px 8px">
+        </a>
+        <p style="color:rgba(255,255,255,.55);font-size:.85rem;line-height:1.8">Tanzania's trusted partner for tax compliance, accounting, business registration, immigration, and advisory services. Serving clients since 2024.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.85rem;transition:all .2s;text-decoration:none" onmouseover="this.style.background='#C8973A'" onmouseout="this.style.background='rgba(255,255,255,.08)'"><i class="bi bi-facebook"></i></a>
+          <a href="#" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.85rem;transition:all .2s;text-decoration:none" onmouseover="this.style.background='#C8973A'" onmouseout="this.style.background='rgba(255,255,255,.08)'"><i class="bi bi-linkedin"></i></a>
+          <a href="#" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.85rem;transition:all .2s;text-decoration:none" onmouseover="this.style.background='#C8973A'" onmouseout="this.style.background='rgba(255,255,255,.08)'"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://wa.me/255653907103" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.85rem;transition:all .2s;text-decoration:none" onmouseover="this.style.background='#25D366'" onmouseout="this.style.background='rgba(255,255,255,.08)'"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5 style="font-family:Poppins,sans-serif;font-weight:700;font-size:.9rem;color:#fff;margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:2px solid #C8973A;display:inline-block">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Home</a></li>
+          <li class="mb-2"><a href="about.html" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>About Us</a></li>
+          <li class="mb-2"><a href="services.html" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Services</a></li>
+          <li class="mb-2"><a href="contact.html" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5 style="font-family:Poppins,sans-serif;font-weight:700;font-size:.9rem;color:#fff;margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:2px solid #C8973A;display:inline-block">Our Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="services.html#tax" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Tax Compliance</a></li>
+          <li class="mb-2"><a href="services.html#registration" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Business Registration</a></li>
+          <li class="mb-2"><a href="services.html#accounting" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Accounting &amp; Audit</a></li>
+          <li class="mb-2"><a href="services.html#immigration" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Immigration Services</a></li>
+          <li class="mb-2"><a href="services.html#advisory" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Business Advisory</a></li>
+          <li class="mb-2"><a href="services.html#payroll" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#C8973A'" onmouseout="this.style.color='rgba(255,255,255,.55)'"><i class="bi bi-chevron-right" style="font-size:.7rem;margin-right:.3rem"></i>Payroll Management</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 style="font-family:Poppins,sans-serif;font-weight:700;font-size:.9rem;color:#fff;margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:2px solid #C8973A;display:inline-block">Contact Info</h5>
+        <ul class="list-unstyled">
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-geo-alt-fill flex-shrink-0" style="color:#C8973A;margin-top:.1rem"></i>
+            <span style="color:rgba(255,255,255,.55);font-size:.83rem">Dar es Salaam, Tanzania</span>
+          </li>
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-envelope-fill flex-shrink-0" style="color:#C8973A;margin-top:.1rem"></i>
+            <a href="mailto:rosamaconsultancy@gmail.com" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none">rosamaconsultancy@gmail.com</a>
+          </li>
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-telephone-fill flex-shrink-0" style="color:#C8973A;margin-top:.1rem"></i>
+            <a href="tel:+255653907103" style="color:rgba(255,255,255,.55);font-size:.83rem;text-decoration:none">+255 653 907 103</a>
+          </li>
+          <li class="d-flex gap-2">
+            <i class="bi bi-clock-fill flex-shrink-0" style="color:#C8973A;margin-top:.1rem"></i>
+            <span style="color:rgba(255,255,255,.55);font-size:.83rem">Mon–Fri: 8:00AM – 5:00PM</span>
+          </li>
+        </ul>
+        <a href="https://wa.me/255653907103" class="btn mt-3 w-100" style="background:#25D366;color:#fff;font-family:Poppins,sans-serif;font-size:.82rem;font-weight:600;padding:.6rem 1rem;border-radius:4px">
+          <i class="bi bi-whatsapp me-2"></i>WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.08);padding:1.2rem 0;text-align:center">
+      <p style="margin:0;font-size:.78rem;color:rgba(255,255,255,.3)">&copy; 2024 ROSAMA Consultancy Ltd. All Rights Reserved. | Dar es Salaam, Tanzania</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/255653907103" class="whatsapp-float" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content:center" style="position:fixed;bottom:4.5rem;right:1.5rem;width:40px;height:40px;border-radius:50%;background:#C8973A;color:#fff;display:none!important;z-index:998;text-decoration:none"><i class="bi bi-arrow-up-short" style="font-size:1.3rem"></i></a>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// Hero Swiper
+new Swiper('.hero-swiper', {
+  loop: true,
+  autoplay: { delay: 5000, disableOnInteraction: false },
+  pagination: { el: '.hero-pagination', clickable: true },
+  navigation: { nextEl: '#hero-next', prevEl: '#hero-prev' },
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  speed: 800
+});
+AOS.init({ duration: 700, easing: 'ease-out', once: true, offset: 50 });
+var st = document.getElementById('scroll-top');
+window.addEventListener('scroll', function() { if(st) st.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
+if(st) st.addEventListener('click', function(e){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+</script>
+</body>
+</html>

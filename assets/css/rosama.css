@@ -1,0 +1,392 @@
+/*=======================================================
+  ROSAMA Consultancy — Custom theme
+  Merged styles from: HeroBiz + Alpha Associates + Best Consultant
+=========================================================*/
+
+/* ---- Fonts & Variables ---- */
+:root {
+  --default-font: "Roboto", system-ui, sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #0F2E5C;
+  --accent-color: #C8973A;
+  --accent-hover: #b07d2a;
+  --navy: #0F2E5C;
+  --navy-dark: #091E3E;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  --nav-color: #0F2E5C;
+  --nav-hover-color: #C8973A;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #0F2E5C;
+  --nav-dropdown-hover-color: #C8973A;
+}
+
+.light-background { --background-color: #f4f6f9; --surface-color: #ffffff; }
+.dark-background  { --background-color: #0F2E5C; --default-color: #ffffff; --heading-color: #ffffff; --surface-color: #1A4080; --contrast-color: #ffffff; }
+
+/* ---- Top Bar (Alpha Associates style) ---- */
+.topbar {
+  background: var(--navy);
+  color: rgba(255,255,255,.75);
+  font-size: .8rem;
+  padding: .4rem 0;
+  border-bottom: 1px solid rgba(200,151,58,.3);
+}
+.topbar a { color: rgba(255,255,255,.75); text-decoration: none; }
+.topbar a:hover { color: #C8973A; }
+.topbar .divider { margin: 0 .7rem; color: rgba(255,255,255,.2); }
+.topbar .social-top a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.8); font-size: .7rem; margin-left: .3rem;
+  transition: all .25s;
+}
+.topbar .social-top a:hover { background: #C8973A; color: #fff; }
+
+/* ---- Header ---- */
+.header { box-shadow: 0 2px 15px rgba(0,0,0,.07); }
+.header .logo h1 { font-size: 22px; font-weight: 700; color: var(--navy); letter-spacing: -.5px; margin: 0; font-family: var(--heading-font); }
+.header .logo span { color: #C8973A; font-size: 24px; }
+.header .btn-getstarted {
+  background: #C8973A; color: #fff; font-family: var(--heading-font); font-weight: 600;
+  font-size: .8rem; padding: .55rem 1.4rem; border-radius: 4px; letter-spacing: .04em;
+  transition: background .2s;
+}
+.header .btn-getstarted:hover { background: var(--accent-hover); color: #fff; }
+
+/* ---- Hero Slider (Alpha Associates feature) ---- */
+.hero-slider-section { position: relative; overflow: hidden; }
+.hero-slide {
+  min-height: 88vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+}
+.hero-slide-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background-size: cover; background-position: center;
+  transition: transform 8s ease;
+}
+.hero-slide:hover .hero-slide-bg { transform: scale(1.04); }
+.hero-slide-overlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(135deg, rgba(9,30,62,.88) 0%, rgba(15,46,92,.7) 60%, rgba(26,64,128,.45) 100%);
+}
+.hero-slide-content { position: relative; z-index: 2; width: 100%; }
+.hero-eyebrow {
+  display: inline-block; font-size: .7rem; font-weight: 600; letter-spacing: .18em;
+  text-transform: uppercase; color: #C8973A; background: rgba(200,151,58,.12);
+  border: 1px solid rgba(200,151,58,.3); padding: .35rem .9rem; border-radius: 20px; margin-bottom: 1.2rem;
+}
+.hero-title { font-family: var(--heading-font); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; color: #fff; line-height: 1.18; }
+.hero-title span { color: #C8973A; font-weight: 700; }
+.hero-text { font-size: 1.05rem; color: rgba(255,255,255,.75); max-width: 580px; line-height: 1.75; }
+.btn-hero-primary {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: #C8973A; color: #fff; font-family: var(--heading-font); font-weight: 600;
+  padding: .8rem 2rem; border-radius: 4px; text-decoration: none; font-size: .9rem;
+  border: 2px solid #C8973A; transition: all .25s;
+}
+.btn-hero-primary:hover { background: transparent; color: #C8973A; }
+.btn-hero-ghost {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: transparent; color: #fff; font-family: var(--heading-font); font-weight: 600;
+  padding: .8rem 2rem; border-radius: 4px; text-decoration: none; font-size: .9rem;
+  border: 2px solid rgba(255,255,255,.35); transition: all .25s;
+}
+.btn-hero-ghost:hover { border-color: #C8973A; color: #C8973A; }
+
+/* Hero swiper nav */
+.hero-prev, .hero-next {
+  position: absolute; top: 50%; z-index: 10; transform: translateY(-50%);
+  width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25); color: #fff; font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  transition: all .25s; backdrop-filter: blur(4px);
+}
+.hero-prev { left: 1.5rem; }
+.hero-next { right: 1.5rem; }
+.hero-prev:hover, .hero-next:hover { background: #C8973A; border-color: #C8973A; }
+.hero-pagination { position: absolute; bottom: 1.5rem; left: 0; right: 0; text-align: center; z-index: 10; }
+
+/* ---- Featured Services ---- */
+.featured-services .service-item { border: 1px solid #e8ecf0; border-radius: 8px; transition: all .25s; }
+.featured-services .service-item:hover { border-color: #C8973A; transform: translateY(-4px); box-shadow: 0 8px 30px rgba(200,151,58,.12); }
+.featured-services .service-item .icon i { color: #C8973A; }
+.featured-services .service-item h4 a { color: var(--navy); }
+.featured-services .service-item h4 a:hover { color: #C8973A; }
+
+/* ---- Stats counter (Alpha Associates feature) ---- */
+.stats-section { background: linear-gradient(135deg, var(--navy) 0%, #1A4080 100%); position: relative; overflow: hidden; }
+.stats-section::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.stat-block { text-align: center; padding: 2.5rem 1rem; position: relative; }
+.stat-block + .stat-block::before {
+  content: ''; position: absolute; left: 0; top: 25%; bottom: 25%;
+  width: 1px; background: rgba(255,255,255,.1);
+}
+.stat-number { font-family: var(--heading-font); font-size: 3rem; font-weight: 700; color: #C8973A; line-height: 1; }
+.stat-label { color: rgba(255,255,255,.65); font-size: .85rem; margin-top: .4rem; }
+
+/* ---- Service Slider (Alpha Associates style) ---- */
+.service-card-slide {
+  background: #fff; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08); transition: all .3s;
+  height: 100%;
+}
+.service-card-slide:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,.14); }
+.service-card-img {
+  height: 180px; display: flex; align-items: center; justify-content: center; position: relative;
+}
+.service-card-img i { font-size: 4rem; color: rgba(200,151,58,.4); }
+.service-num {
+  position: absolute; top: 1rem; left: 1rem; font-family: var(--heading-font); font-size: 3rem;
+  font-weight: 800; color: rgba(255,255,255,.08); line-height: 1;
+}
+.service-card-body { padding: 1.5rem; }
+.service-card-body h4 { font-family: var(--heading-font); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .6rem; }
+.service-card-body p { font-size: .85rem; color: #666; line-height: 1.65; }
+.service-arry-btn {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-size: .82rem; font-weight: 600; color: #C8973A; text-decoration: none;
+  margin-top: .8rem; font-family: var(--heading-font);
+}
+.service-arry-btn:hover { color: var(--navy); }
+
+/* ---- Testimonials (Alpha Associates large quote style) ---- */
+.testimonial-large .quote-icon { font-size: 5rem; line-height: 1; color: #C8973A; opacity: .15; font-family: Georgia, serif; }
+.testimonial-large .review-text { font-size: 1.15rem; line-height: 1.8; color: #333; font-style: italic; }
+.testimonial-large .reviewer-img {
+  width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--navy), #1A4080);
+  display: flex; align-items: center; justify-content: center; color: #fff;
+  font-family: var(--heading-font); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;
+}
+.testimonial-large .reviewer-name { font-family: var(--heading-font); font-weight: 700; color: var(--navy); font-size: .95rem; }
+.testimonial-large .reviewer-co { font-size: .8rem; color: #888; }
+.testimonial-prev-btn, .testimonial-next-btn {
+  width: 48px; height: 48px; border-radius: 50%; border: 2px solid rgba(15,46,92,.2);
+  background: #fff; color: var(--navy); font-size: 1rem; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; transition: all .25s;
+}
+.testimonial-prev-btn:hover, .testimonial-next-btn:hover { background: #C8973A; border-color: #C8973A; color: #fff; }
+
+/* ---- Brand/Clients ticker ---- */
+.clients-ticker { background: #f4f6f9; padding: 2rem 0; overflow: hidden; }
+.clients-ticker-inner { display: flex; gap: 3rem; align-items: center; animation: ticker 25s linear infinite; white-space: nowrap; }
+.clients-ticker-inner:hover { animation-play-state: paused; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.client-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: .7rem 1.4rem; font-family: var(--heading-font); font-weight: 700;
+  font-size: .8rem; color: #555; white-space: nowrap; flex-shrink: 0;
+  transition: all .2s;
+}
+.client-badge:hover { border-color: #C8973A; color: #C8973A; }
+
+/* ---- Client Logo Grid ---- */
+.client-logo-card {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  padding: 1.4rem 1rem 1rem;
+  text-align: center;
+  transition: all .25s ease;
+  box-shadow: 0 2px 8px rgba(15,46,92,.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.client-logo-card:hover {
+  border-color: #C8973A;
+  box-shadow: 0 6px 24px rgba(200,151,58,.18);
+  transform: translateY(-4px);
+}
+.client-logo-img {
+  width: 160px;
+  height: 60px;
+  object-fit: contain;
+  filter: saturate(.6) opacity(.85);
+  transition: filter .25s ease;
+  border-radius: 6px;
+}
+.client-logo-card:hover .client-logo-img {
+  filter: saturate(1) opacity(1);
+}
+.client-logo-name {
+  font-family: var(--heading-font);
+  font-size: .78rem;
+  font-weight: 700;
+  color: #0F2E5C;
+  margin-top: .3rem;
+}
+.client-logo-sector {
+  font-size: .7rem;
+  color: #C8973A;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.client-badge span { margin-left: .4rem; }
+
+/* ---- FAQ Accordion ---- */
+.faq-item { border: 1px solid #e8ecf0; border-radius: 8px; margin-bottom: .8rem; overflow: hidden; }
+.faq-question {
+  width: 100%; padding: 1rem 1.2rem; text-align: left; background: #fff;
+  border: none; font-family: var(--heading-font); font-weight: 600; color: var(--navy);
+  font-size: .9rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+  transition: background .2s;
+}
+.faq-question:hover, .faq-question[aria-expanded="true"] { background: #f8f9fc; }
+.faq-question[aria-expanded="true"] { color: #C8973A; }
+.faq-question i { transition: transform .25s; flex-shrink: 0; font-size: .8rem; }
+.faq-question[aria-expanded="true"] i { transform: rotate(180deg); color: #C8973A; }
+.faq-answer { padding: 0 1.2rem 1rem; color: #555; font-size: .88rem; line-height: 1.7; }
+
+/* ---- Industry sectors grid ---- */
+.industry-card {
+  background: #fff; border: 1px solid #e8ecf0; border-radius: 10px; padding: 1.5rem;
+  text-align: center; transition: all .25s; cursor: default;
+}
+.industry-card:hover { border-color: #C8973A; box-shadow: 0 6px 24px rgba(200,151,58,.12); transform: translateY(-3px); }
+.industry-card i { font-size: 2rem; color: #C8973A; margin-bottom: .8rem; display: block; }
+.industry-card h6 { font-family: var(--heading-font); font-weight: 600; color: var(--navy); font-size: .85rem; margin: 0; }
+
+/* ---- Onfocus (Why Choose Us) ---- */
+.onfocus ul li i { color: #C8973A; }
+.onfocus .read-more { color: #C8973A; }
+.onfocus .read-more:hover { color: #fff; }
+
+/* ---- About ---- */
+.about .nav-pills .nav-link { color: var(--navy); border: 1px solid rgba(15,46,92,.25); margin-right: .4rem; margin-bottom: .4rem; }
+.about .nav-pills .nav-link.active { background: #C8973A; border-color: #C8973A; color: #fff; }
+.about .nav-pills .nav-link:hover { border-color: #C8973A; color: #C8973A; }
+
+/* ---- CTA Section ---- */
+.call-to-action .cta-btn { background: #C8973A; border-color: #C8973A; }
+.call-to-action .cta-btn:hover { background: var(--accent-hover); }
+
+/* ---- Footer ---- */
+.footer .social-links a:hover { background: #C8973A; border-color: #C8973A; }
+.footer .footer-about .sitename { color: #fff; }
+
+/* ---- Section title accent ---- */
+.section-title h2::after { background: #C8973A; }
+.sub-eyebrow {
+  font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #C8973A;
+  display: block; margin-bottom: .5rem;
+}
+
+/* ---- Scroll top ---- */
+.scroll-top { background: #C8973A; }
+.scroll-top:hover { background: var(--accent-hover); }
+
+/* ---- Process steps ---- */
+.process-step { text-align: center; padding: 2rem 1rem; }
+.process-step .step-num {
+  width: 60px; height: 60px; border-radius: 50%; background: var(--navy); color: #C8973A;
+  font-family: var(--heading-font); font-weight: 800; font-size: 1.3rem;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;
+}
+.process-step h5 { font-family: var(--heading-font); font-size: .9rem; font-weight: 700; color: var(--navy); }
+.process-step p { font-size: .82rem; color: #666; }
+.process-connector { border-top: 2px dashed rgba(200,151,58,.3); margin-top: 30px; }
+
+/* ---- WhatsApp float ---- */
+.whatsapp-float {
+  position: fixed; bottom: 2rem; right: 1.5rem; z-index: 999;
+  width: 52px; height: 52px; border-radius: 50%; background: #25D366;
+  color: #fff; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4); text-decoration: none; transition: transform .2s;
+}
+.whatsapp-float:hover { transform: scale(1.1); color: #fff; }
+
+/* ---- Responsiveness ---- */
+@media (max-width: 768px) {
+  .hero-slide { min-height: 70vh; }
+  .hero-title { font-size: 1.9rem; }
+  .stat-number { font-size: 2.2rem; }
+  .stat-block + .stat-block::before { display: none; }
+  .hero-prev, .hero-next { display: none; }
+}
+
+/* ===== FIXES: override HeroBiz main.css patterns on inner pages ===== */
+/* Kill the crosshatch × pattern on .about-img */
+.about .about-img::before { display: none !important; }
+.about .about-img { margin: 0 !important; position: relative; }
+/* Kill any call-to-action img overlays */
+.call-to-action .img::before,
+.call-to-action .img::after { display: none !important; }
+/* Inner page hero — dark photo background */
+.page-hero { padding: 0; background: #0F2E5C; border-bottom: none; overflow: hidden; }
+.page-hero h1 { font-family: Poppins, sans-serif; font-weight: 700; color: #fff; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.page-hero .sub-eyebrow { color: #C8973A; }
+
+/* Icon display in featured service strip */
+.featured-services .service-item img { display:block; margin-bottom:.8rem; }
+.featured-services .service-item h4 { font-family:Poppins,sans-serif; font-size:.95rem; font-weight:700; margin-bottom:.4rem; }
+/* Service detail large icon centering */
+.services-detail-icon { display:flex; align-items:center; justify-content:center; min-height:280px; border-radius:12px; }
+
+/* ===== Custom Tab Pills (nav-pills wrapper required for Bootstrap JS) ===== */
+/* Strip ALL Bootstrap nav-pills defaults from the wrapper */
+ul.rosama-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  border: none !important;
+  background: transparent !important;
+}
+ul.rosama-tabs .nav-item {
+  padding: 0;
+  margin: 0;
+}
+/* The actual pill button */
+.rosama-tab {
+  font-family: Poppins, sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  color: #0F2E5C !important;
+  background: #fff !important;
+  border: 2px solid rgba(15,46,92,.2) !important;
+  border-radius: 6px !important;
+  padding: .45rem 1.2rem !important;
+  cursor: pointer;
+  transition: all .2s;
+  outline: none;
+  /* Reset Bootstrap nav-link styles */
+  text-decoration: none;
+  display: inline-block;
+}
+.rosama-tab:hover {
+  border-color: #C8973A !important;
+  color: #C8973A !important;
+  background: #fff !important;
+}
+.rosama-tab.active,
+.rosama-tab.show.active {
+  background: #C8973A !important;
+  border-color: #C8973A !important;
+  color: #fff !important;
+}
+
+/* Values card icon alignment fix */
+#tab-values .col-6 > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#tab-values img { display: block; }
